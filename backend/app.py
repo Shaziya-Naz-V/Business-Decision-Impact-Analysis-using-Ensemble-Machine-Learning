@@ -6,8 +6,13 @@ from expert_guidance_module import search_articles
 app = Flask(__name__)
 CORS(app)
 
+# def get_db():
+#     return sqlite3.connect("database.db", check_same_thread=False)
+
 def get_db():
-    return sqlite3.connect("database.db", check_same_thread=False)
+    conn = sqlite3.connect("database.db", check_same_thread=False, timeout=10)
+    conn.execute("PRAGMA journal_mode=WAL")
+    return conn
 
 def create_tables():
     conn = get_db()
