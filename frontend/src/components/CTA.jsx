@@ -1,32 +1,3 @@
-// import styled from "styled-components";
-// import { useNavigate } from "react-router-dom";
-
-
-// const Box = styled.section`
-//   margin: 0px;
-//   padding: 60px;
-//   border-radius: 20px;
-//   text-align: center;
-// `;
-
-// const Button = styled.button`
-//   margin-top: 20px;
-//   background: #19c6d4;
-//   border: none;
-//   padding: 14px 30px;
-//   border-radius: 10px;
-// `;
-
-// export default function CTA() {
-//   const navigate = useNavigate();
-//   return (
-//     <Box>
-//       <h2>Ready to Transform Your Decision Making?</h2>
-//       <Button onClick={() => navigate("/auth/signin")}>Get Started Free →</Button>
-//     </Box>
-//   );
-// }
-
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
